@@ -1,6 +1,8 @@
-// import 'codemirror/lib/codemirror.css';
-// import 'codemirror/theme/dracula.css';
-// import 'codemirror/theme/darcula.css';
+import 'codemirror/lib/codemirror.css';
+import './code.css'
+import 'codemirror/theme/dracula.css';
+import 'codemirror/theme/darcula.css';
+
 import 'codemirror/mode/css/css';
 import 'codemirror/mode/python/python';
 import 'codemirror/mode/dockerfile/dockerfile';
@@ -299,7 +301,7 @@ export default class EditorCodeMirror {
         typeof LANGUAES[this.data.language] === 'string'
           ? LANGUAES[this.data.language].toLowerCase()
           : LANGUAES[this.data.language];
-      // console.log('--this.data.language', e.target.value, this.data.language);
+      console.log('--this.data.language', e.target.value, language);
       codemirror.setOption('mode', language);
       // this.language = language;
     };

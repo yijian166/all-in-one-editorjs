@@ -1,22 +1,23 @@
-import EditorJS, { EditorConfig } from "@editorjs/editorjs";
-import Delimiter from "@editorjs/delimiter";
-import Header from "@editorjs/header";
-import ImageTool from "@editorjs/image";
-import InlineCode from "@editorjs/inline-code";
-import LinkTool from "@editorjs/link";
-import List from "@editorjs/list";
-import Marker from "@editorjs/marker";
-import Quote from "@editorjs/quote";
-import Table from "@editorjs/table";
-import Embed from "@editorjs/embed";
-import Underline from "@editorjs/underline";
+import { EditorConfig } from "@editorjs/editorjs";
+import * as Delimiter from "@editorjs/delimiter";
+import * as Header from "@editorjs/header";
+import * as ImageTool from "@editorjs/image";
+import * as InlineCode from "@editorjs/inline-code";
+import * as LinkTool from "@editorjs/link";
+import * as List from "@editorjs/list";
+import * as Marker from "@editorjs/marker";
+import * as Quote from "@editorjs/quote";
+import * as Table from "@editorjs/table";
+import* as  Embed from "@editorjs/embed";
+import* as  Underline from "@editorjs/underline";
 // import RawTool from '@editorjs/raw';
-import Warning from "@editorjs/warning";
-import Checklist from "@editorjs/checklist";
+import * as Warning from "@editorjs/warning";
+import * as Checklist from "@editorjs/checklist";
 import EditorCodeMirror from "./src/editorjs-codemirror";
 import EditorJsInlineDel from "./src/editorjs-inline-del";
 import EditorSMDE from "./src/editorjs-smde";
 export { EditorConfig, ToolSettings } from "@editorjs/editorjs";
+import * as EditorJS from '@editorjs/editorjs' 
 const DefaultTools: EditorConfig["tools"] = {
   header: {
     class: Header,
@@ -131,7 +132,7 @@ const DefaultTools: EditorConfig["tools"] = {
 // type QuickConfig = {
 //   [K in keyof typeof DefaultTools]: Partial<ToolSettings>
 // }
-class AIOEditorJs extends EditorJS {
+class AIOEditorJs extends (EditorJS as any) {
   static get DefaultTools() {
     return DefaultTools!
   }   

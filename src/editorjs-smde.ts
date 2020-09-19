@@ -1,7 +1,8 @@
 import * as SimpleMDE from "simplemde";
 import * as Types from "./editorjs-smde.type";
 import { mdToHTML } from "./md";
-// import 'simplemde/src/css/simplemde.css';
+import 'simplemde/src/css/simplemde.css';
+import './smde.css'
 // import 'codemirror/lib/codemirror.css';
 
 const ToolBarFuncs = [

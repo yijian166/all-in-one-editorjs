@@ -5,8 +5,6 @@
     "outDir": "lib",
     "strict": true,
     "removeComments": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "lib": [
       "dom",

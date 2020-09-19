@@ -1,8 +1,10 @@
-import EditorJS, { EditorConfig } from "@editorjs/editorjs";
+import { EditorConfig } from "@editorjs/editorjs";
 export { EditorConfig, ToolSettings } from "@editorjs/editorjs";
-declare class AIOEditorJs extends EditorJS {
+import * as EditorJS from '@editorjs/editorjs';
+declare const AIOEditorJs_base: any;
+declare class AIOEditorJs extends AIOEditorJs_base {
     static get DefaultTools(): {
-        [toolName: string]: import("@editorjs/editorjs").BlockToolConstructable | import("@editorjs/editorjs").InlineToolConstructable | import("@editorjs/editorjs").ToolSettings;
+        [toolName: string]: EditorJS.BlockToolConstructable | EditorJS.InlineToolConstructable | EditorJS.ToolSettings;
     };
     constructor(config: EditorConfig, hideTools?: string[]);
 }

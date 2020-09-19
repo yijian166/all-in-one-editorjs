@@ -1,3 +1,7 @@
+import 'codemirror/lib/codemirror.css';
+import './code.css';
+import 'codemirror/theme/dracula.css';
+import 'codemirror/theme/darcula.css';
 import 'codemirror/mode/css/css';
 import 'codemirror/mode/python/python';
 import 'codemirror/mode/dockerfile/dockerfile';

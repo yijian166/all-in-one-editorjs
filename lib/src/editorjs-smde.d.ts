@@ -1,5 +1,7 @@
 /// <reference types="codemirror" />
 import * as Types from "./editorjs-smde.type";
+import 'simplemde/src/css/simplemde.css';
+import './smde.css';
 export default class EditorSMDE {
     static defaultToolBar: Types.MarkdownEditorToolBarConfig;
     api: any;
