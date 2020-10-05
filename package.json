@@ -1,6 +1,6 @@
 {
   "name": "all-in-one-editorjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "all in one editorjs",
   "main": "./lib/index.js",
   "scripts": {
