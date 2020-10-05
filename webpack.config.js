@@ -1,3 +1,4 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   entry: './index.ts',
   module: {
@@ -22,7 +23,8 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
+          // 'style-loader',
           'css-loader'
         ]
       }
@@ -37,5 +39,6 @@ module.exports = {
     filename: 'index.js',
     library: 'CodeMirror',
     libraryTarget: 'umd'
-  }
+  },
+  plugins: [new MiniCssExtractPlugin()],
 };

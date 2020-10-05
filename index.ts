@@ -153,4 +153,6 @@ class AIOEditorJs extends (EditorJS as any) {
   }
 }
 
+(window as any).AIOEditorJs = AIOEditorJs;
+
 export default AIOEditorJs
