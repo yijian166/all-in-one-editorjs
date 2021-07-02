@@ -41,4 +41,5 @@ module.exports = {
     libraryTarget: 'umd'
   },
   plugins: [new MiniCssExtractPlugin()],
+  externals: ['simplemde','codemirror']
 };
